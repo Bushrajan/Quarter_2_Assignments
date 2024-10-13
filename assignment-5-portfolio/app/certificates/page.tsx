@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import certificate2 from "@/app/certificate2.png"
-import click from "@/app/click.png"
+import certificate2 from '@/app/certificate2.png'
+import click from '@/app/click.png'
 
 
 export default function Certificates() {
@@ -16,7 +16,7 @@ export default function Certificates() {
               <div className="w-24 h-full bg-indigo-500"></div>
             </div>
             <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-              <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">CLIENT REVIEWS</h1>
+              <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">CERTIFICATES</h1>
               <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0"><strong><i>"As a freelance web designer, I always aim to deliver the best to my clients."</i></strong></p>
             </div>
           </div>
