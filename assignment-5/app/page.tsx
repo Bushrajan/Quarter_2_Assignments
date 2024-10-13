@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import G2 from "@/app/g4.png"
 import About from "./about/page";
@@ -13,12 +14,15 @@ export default function Home() {
         <div className="container px-5 py-24 mx-auto">
           <div className="lg:w-3/3 container  mx-auto flex flex-wrap second">
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0"><br /><br />
-              {/* <TypedComponent /> */}
+            
 
-              <h1 className="mb-1"><span className="bj">BUSHRA JAN</span></h1>
-              <h2 className="text-sm web">Welcome to My Portfolio</h2>
+
+              <h1 className="mb-1"><span className="bj">  <TypedComponent />
+              </span></h1>
+              
               <br />
-              <p className="leading-relaxed py-3 myself ">Myself <strong><i>Bushra Jan</i></strong>. I am a <strong><i>Front End Developer</i></strong> and currently learning Next.js in  GIAIC . I'm also a student in <strong><i>SMIT (Saylani MASS IT Training)</i></strong> and experience of <strong><i>Interenship</i></strong> of <strong>
+              <br />
+              <p className="leading-relaxed py-3 text-2xl myself ">Myself <strong><i>Bushra Jan</i></strong>. I am a <strong><i>Front End Developer</i></strong> and currently learning Next.js in  GIAIC . I'm also a student in <strong><i>SMIT (Saylani MASS IT Training)</i></strong> and experience of <strong><i>Interenship</i></strong> of <strong>
                 <i>(6 months)</i></strong> I crafts <strong><i>responsive websites</i></strong> where technologies meet creativity.
                 I'am  a passionate web
                 developer with expertise in

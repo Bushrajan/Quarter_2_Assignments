@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="container px-5 py-8 flex flex-wrap mx-auto items-center">
             <div className="flex md:flex-nowrap flex-wrap  items-end md:justify-start">
               <div className="relative sm:w-64 w-40 sm:mr-4 mr-2">
-                <label className="leading-7 email text-sm text-sky-600"><strong>Email</strong><br />
+                <label className="leading-7 email text-4xl text-black"><strong>Email</strong><br />
                   <strong>
                     <a href="mailto:Bushrajantubajan@gmail.com">Bushrajan@gmail.com</a>
                   </strong>
@@ -23,7 +23,7 @@ export default function Footer() {
 
             <div>
               <br />
-              <p className='text-black first font-bold gap py-20 px-5'>"I am the 😁 hero of the digital realm  😁. I weave the intricate fabric of the internet with my expertise in coding, design, and problem-solving. My creativity transforms abstract ideas into interactive experiences, making the web not only functional but also visually stunning. My dedication ensures that our online interactions are seamless, efficient, and engaging. My goal is to reach the peak of knowledge & create impactful solutions that shape the future.  " </p>
+              <p className='text-black  first font-bold gap py-20 text-2xl px-5' style={{textShadow:"1px 2px 1px yellow"}}>"I am the 😁 hero of the digital realm  😁. I weave the intricate fabric of the internet with my expertise in coding, design, and problem-solving. My creativity transforms abstract ideas into interactive experiences, making the web not only functional but also visually stunning. My dedication ensures that our online interactions are seamless, efficient, and engaging. My goal is to reach the peak of knowledge & create impactful solutions that shape the future.  " </p>
             
             <br />
             </div>
