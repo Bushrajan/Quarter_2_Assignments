@@ -31,16 +31,16 @@ export default function Footer() {
               <a className="ml-3 girl fa" href='https://www.google.com/maps/place/Jeswani+St,+Seari+Quarters,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8516079,67.0005856,17z/data=!3m1!4b1!4m6!3m5!1s0x3eb33e03ef14aa01:0xfae5d2926ca10456!8m2!3d24.8516031!4d67.0031659!16s%2Fg%2F1vy7f1h5?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D' target='_blank'>
                 <img width="30" height="30" src="https://img.icons8.com/3d-fluency/94/map-marker--v1.png" alt="map-marker--v1" />
               </a>
-              <a className="ml-3 girl fa">
+              <a  href='https://www.facebook.com/' className="ml-3 girl fa">
                 <img width="30" height="30" src="https://img.icons8.com/3d-fluency/94/facebook-circled.png" alt="facebook-circled" />
               </a>
-              <a className="ml-3 girl fa">
+              <a  href='https://github.com/Bushrajan' className="ml-3 girl fa">
                 <img width="30" height="30" src="https://img.icons8.com/3d-fluency/94/github.png" alt="github" />
               </a>
-              <a className="ml-3 girl fa">
+              <a  href='https://www.linkedin.com/feed/' className="ml-3 girl fa">
                 <img width="30" height="30" src="https://img.icons8.com/3d-fluency/94/linkedin.png" alt="linkedin" />
               </a>
-              <a className="ml-3 girl fa">
+              <a  href='mailto:bushrajantubajan@gmail.com' className="ml-3 girl fa">
                 <img width="30" height="30" src="https://img.icons8.com/3d-fluency/94/email.png" alt="email" />
               </a>
             </span>
