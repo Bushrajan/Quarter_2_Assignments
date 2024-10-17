@@ -1,0 +1,362 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxx all xxxxxxxxxxxxxxxxxxxxxxxxxx*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* xxxxxxxxxxxxxxxxxx body xxxxxxxxxxxxxxxxxxxxxxxxxxx */
+body {
+  margin: 0 auto !important;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.189);
+}
+
+:root {
+  --purple: var(#CE71FA);
+  --blue: var(#00acee);
+}
+
+/* xxxxxxxxxxxxxxxxxx logo xxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.logo:hover {
+  animation: rotate 1s linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* xxxxxxxxxxxxxxxxxx button xxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+/* 12 */
+.btn-12 {
+  margin-top: 40px;
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+
+.btn-12 span {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(0deg, #CE71FA 0%, rgb(110, 182, 255) 100%);
+  display: block;
+  position: absolute;
+  width: 145px;
+  height: 40px;
+  color: white;
+  margin: 0 auto !important;
+  font-weight: 900;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  margin: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn-12 span:nth-child(1) {
+  box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+
+.btn-12:hover span:nth-child(1) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.btn-12:hover span:nth-child(2) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+/* xxxxxxxxxxxxx image xxxxxxxxxxxxx */
+.bj {
+  font-weight: 900;
+  margin-top: 5px;
+  line-height: 50px;
+  color:black;
+  font-size: 60px !important;
+  text-shadow: 1px 2px 10px rgb(0, 172, 238);
+}
+
+.web {
+  font-weight: 900;
+  color:black;
+  margin-top: 5px;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #CE71FA;
+}
+
+.girl {
+  width: 45px;
+  background: rgb(0, 172, 238);
+  background: linear-gradient(0deg, #CE71FA 0%, rgb(110, 182, 255) 100%);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid #ffffff !important;
+  animation: float 0.9s infinite alternate;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+/* xxxxxx fa xxxxxxx */
+.fa {
+  color: #ce71fa;
+  border: 2px solid rgb(0, 179, 255);
+  padding: 5px;
+  border-radius: 50%;
+  animation: typing 0.9s infinite alternate;
+  filter: drop-shadow(-8px 0px 1.5em #5ff36d85);
+
+}
+
+.email {
+  color: #ce71fa;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px rgb(0, 179, 255);
+}
+
+.fa:hover {
+  animation: flip;
+  animation-duration: 2s;
+  background: rgb(0, 0, 0);
+  border: 2px solid #ce71fa;
+  color: white;
+}
+
+/* xxxxxxxxxxx home section xxxxxxxxxxxx */
+.Img1 {
+  min-height: 330px;
+  max-width: 310px;
+  animation: float 0.9s infinite alternate;
+}
+
+.glow {
+  filter: drop-shadow(-8px 0px 1.75em #cf71fa63);
+}
+
+body {
+  background-image: url(./background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  color: rgb(0, 179, 255);
+  border-radius: 13px;
+  backdrop-filter: blur(4px);
+  background-color: transparent;
+  /* background-image: url(./background.png); */
+}
+
+.head {
+
+  font-family: "Spicy Rice", serif;
+  font-weight: 800;
+  font-style: normal;
+  align-items: center;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.first {
+  backdrop-filter: blur(4px);
+  background-color: transparent;
+
+}
+
+.footer {
+  background-image: url(./footer.png);
+
+}
+
+.myself {
+  line-height: 35px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  max-width: 290px;
+  min-height: 250px;
+  backdrop-filter: blur(8px);
+  margin: 12px !important;
+  border-radius: 0 50px 0 50px;
+  margin: 0 auto;
+  animation: float 0.7s infinite alternate;
+
+  background-color: #cf71fa21;
+
+}
+
+.card2 {
+  border-radius: 50px 0 50px 0;
+
+}
+
+.card4 {
+  border-radius: 50px 0 50px 0;
+
+}
+
+.firstcards {
+  border: 3px solid rgb(0, 179, 255);
+}
+
+.card1:hover {
+  background-color: rgba(0, 179, 255, 0.245);
+  border: 5px dashed rgb(3, 255, 41);
+}
+
+.card1 h2:hover {
+
+  border: 1px dashed rgb(0, 0, 0);
+  background-color: #ffffff;
+  color: rgb(0, 179, 255);
+}
+
+/* -------------------------------------- */
+/* xxxxxxxxxxx client section xxxxxxxxxxxx */
+.clientcard {
+  border: 5px dashed rgb(244, 244, 6);
+  max-width: 380px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  backdrop-filter: blur(4px);
+  background-color: rgba(85, 92, 93, 0.137);
+}
+
+.client:hover {
+  border: 5px dashed rgb(0, 0, 0);
+  background-color: #807e8148;
+}
+
+/* -------------------------------------- */
+/* xxxxxxxxxxx projects section xxxxxxxxxxxx */
+.procards {
+  height: 150px;
+  width: 150px;
+  animation: float 0.9s infinite alternate;
+
+}
+
+.procards_back {
+  margin: 10px;
+  max-width: 300px !important;
+  backdrop-filter: blur(4px);
+  background-color: rgba(85, 92, 93, 0.137);
+  border-radius: 10%;
+  filter: drop-shadow(-8px 0px 1.5em #00ffea85);
+}
+
+.gap {
+  line-height: 30px;
+}
+
+/* -------------certificates------------ */
+
+
+.certificate-card {
+  max-width: 320px !important;
+  max-height: 470px !important;
+  margin: 0 auto;
+  filter: drop-shadow(-8px 0px 1.5em #fff70058);
+  backdrop-filter: blur(4px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card:hover {
+  background-color: #dcffd741;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.image{
+  margin: 0 auto;
+  animation: float 0.7s infinite alternate;
+}
+
+.click{
+  margin: 0 auto;
+}
+
+.h2 {
+  backdrop-filter: blur(8px);
+}
+
+.typed-span {
+  font-size: 40px;
+  
+  text-transform: uppercase;
+  font-weight: 700;
+}
