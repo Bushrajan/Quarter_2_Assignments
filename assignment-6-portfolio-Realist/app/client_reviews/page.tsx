@@ -1,13 +1,10 @@
 "use client"; // <===== REQUIRED
 
 import React from "react";
-import Link from "next/link";
-import { Icon } from '@iconify/react';
 import Image from "next/image";
 import cb1 from "@/app/cb1.png"
 import cb2 from "@/app/cb2.png"
 import cg1 from "@/app/cg1.png"
-// Swiper components, modules and styles
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";

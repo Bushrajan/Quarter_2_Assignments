@@ -10,7 +10,7 @@ import IMG4 from "@/app/birds.png";
 import IMG5 from "@/app/birds.png";
 import logo from "@/app/logo.png";
 import bj from "@/app/bj.png";
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import 'animate.css';
 import 'flowbite';
 import line from "@/app/line.png"
@@ -18,37 +18,38 @@ import Footer from "./components/footer";
 import TypedComponent from "./components/typed";
 
 export default function Home() {
-  const [active, setActive] = useState(false);
 
-  const toggle = () => {
-    setActive(!active);
-  };
+  // const [active, setActive] = useState(false);
 
-  type Tsister = {
-    image: StaticImageData;
-    heading: string;
-    text: string;
-  };
+  // const toggle = () => {
+  //   setActive(!active);
+  // };
 
-  const sister: Tsister[] = [
-    { image: IMG1, heading: 'Our SisterHood is look like this', text: 'May this year bring you endless happiness' },
-    { image: IMG2, heading: 'Happy birthday, built-in bestie!', text: 'On this day, a very special person came into this world.' },
-    { image: IMG3, heading: 'My sister is better than your sister.', text: 'On this day, a very special person came.' },
-    { image: IMG4, heading: 'Our SisterHood is look like this', text: 'On this day, a very special person came into this world.' },
-    { image: IMG5, heading: 'To my favorite sister, Happy birthday!', text: 'On this day, a very special person came into .' },
-  ];
+  // type Tsister = {
+  //   image: StaticImageData;
+  //   heading: string;
+  //   text: string;
+  // };
+
+  // const sister: Tsister[] = [
+  //   { image: IMG1, heading: 'Our SisterHood is look like this', text: 'May this year bring you endless happiness' },
+  //   { image: IMG2, heading: 'Happy birthday, built-in bestie!', text: 'On this day, a very special person came into this world.' },
+  //   { image: IMG3, heading: 'My sister is better than your sister.', text: 'On this day, a very special person came.' },
+  //   { image: IMG4, heading: 'Our SisterHood is look like this', text: 'On this day, a very special person came into this world.' },
+  //   { image: IMG5, heading: 'To my favorite sister, Happy birthday!', text: 'On this day, a very special person came into .' },
+  // ];
 
 
-  type Ticon = {
-    name: string
-    link: string
-  }
-  const icon: Ticon[] = [
-    { name: 'devicon:facebook', link: 'https://www.facebook.com/profile.php?id=61552824575623' },
-    { name: 'logos:linkedin-icon', link: 'https://www.linkedin.com/in/bushra-jan-50653427b/' },
-    { name: 'skill-icons:github-dark', link: 'https://github.com/Bushrajan' },
-    { name: 'skill-icons:instagram', link: 'https://www.instagram.com/workplace2i/' }
-  ]
+  // type Ticon = {
+  //   name: string
+  //   link: string
+  // }
+  // const icon: Ticon[] = [
+  //   { name: 'devicon:facebook', link: 'https://www.facebook.com/profile.php?id=61552824575623' },
+  //   { name: 'logos:linkedin-icon', link: 'https://www.linkedin.com/in/bushra-jan-50653427b/' },
+  //   { name: 'skill-icons:github-dark', link: 'https://github.com/Bushrajan' },
+  //   { name: 'skill-icons:instagram', link: 'https://www.instagram.com/workplace2i/' }
+  // ]
 
 
 

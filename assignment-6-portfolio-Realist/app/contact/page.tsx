@@ -5,13 +5,6 @@ import Link from "next/link";
 import { Icon } from '@iconify/react';
 import line from "@/app/line.png"
 import logo from "@/app/logo.png"
-import ui from "@/app/ui.png"
-import { Button } from "@/components/ui/button";
-import gov from "@/app/giaic.png"
-import matric from "@/app/matric.png"
-import intermidiate from "@/app/intermidiate.png"
-import smit from "@/app/smit.png"
-import Client_reviews from '../client_reviews/page';
 import Footer from '../components/footer';
 export default function Contact() {
     return (
