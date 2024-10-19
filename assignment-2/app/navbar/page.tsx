@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
+import logo from '@/app/asset/logo.png'
 
 export default function Navbar() {
     return (
@@ -7,7 +9,7 @@ export default function Navbar() {
             <header className="text-gray-600 body-font">
                 <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                     <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                        <img src="https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/swlryfzoelm1wv1bcsk1" alt="img" className='img-fluid' width={100} />
+                        <Image src={logo} alt="img" className='img-fluid' width={100} />
                     </a>
                     <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
                         <Link href={'/'} className="mr-5 hover:text-gray-900">HOME</Link>
