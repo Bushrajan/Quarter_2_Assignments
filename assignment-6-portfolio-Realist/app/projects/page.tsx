@@ -1,8 +1,10 @@
+"use client"; // <===== REQUIRED
 import React from 'react'
 import Image from 'next/image'
-// import github from "@/app/github.gif"
-// import linkedin from "@/app/linkedin.gif"
-// import { link } from 'fs'
+import line from "@/app/line.png"
+import logo from "@/app/logo.png"
+import Link from "next/link";
+import { Icon } from '@iconify/react';
 import charity from "@/app/charity.png"
 import tamba from "@/app/tamba.png"
 import github from "@/app/icons8-github-94.png"
@@ -13,51 +15,104 @@ import veges from "@/app/veges.png"
 import house from "@/app/house.png"
 import embad from "@/app/embad.png"
 import cloths from "@/app/cloths.png"
-import birds  from "@/app/birds.png"
+import birds from "@/app/birds.png"
 import hotel from "@/app/hotel.png"
 import sea from "@/app/sea.png"
-import pet  from "@/app/pet.png"
-import electrica  from "@/app/electrica.png"
-// import { Link } from 'lucide-react'
+import pet from "@/app/pet.png"
+import electrica from "@/app/electrica.png"
 export default function Projects() {
+
   return (
     <div>
 
-      <div className='container mx-auto pt-0 p-5'>
-        <div className="flex flex-col">
-          <div className="h-1 bg-gray-200 rounded overflow-hidden">
-            <div className="w-24 h-full bg-indigo-500"></div>
+      <nav className="bg-white rounded-xl mt-3 w-full border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between  mx-auto p-1">
+          <div className="flex items-center">
+
+            <Image src={logo} className="logo" alt="Logo" />
+
+            <Link href={'/'} className=" font-bold hover:text-purple-500" >
+              <span><strong className="" style={{ fontSize: "20px" }} ><i>Projects</i></strong></span>
+            </Link>
+
+            <Image src={line} className="line" alt="line" />
+            <iframe src="https://free.timeanddate.com/clock/i9lj1amy/n757/fn7/fs20/tct/pct/ftb/th2" width="120" height="30" ></iframe>
           </div>
-          <div className="flex  flex-wrap sm:flex-row flex-col py-6 mb-12">
-            <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">PROJECTS</h1>
-            <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0"><strong><i>"As a freelance web designer, I always aim to deliver the best to my clients."</i></strong></p>
+          <button data-collapse-toggle="navbar-multi-level" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500  md:hidden hover:bg-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
+            <span className="sr-only"></span>
+            <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+
+          <div className="hidden  w-full md:block md:w-auto " id="navbar-multi-level">
+
+            <ul className="flex flex-col items-center justify-center font-medium p-4 gap-0 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-2 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <div className="border1 ">
+                  <Link href={'/'} className=" font-bold hover:text-purple-500" >
+                    <Icon icon="fluent:home-32-filled" className="icon" /><span className="icon-heading">Home</span></Link>
+                </div>
+              </li>
+
+              <li>
+                <div className="border1 ">
+                  <Link href={'/about'} className=" font-bold hover:text-purple-500" >
+                    <Icon icon="mdi:about" className="icon" /><span className="icon-heading">About Me</span></Link>
+                </div>
+              </li>
+
+              <li>
+                <div className="border1 ">
+                  <Link href={'/projects'} className=" font-bold hover:text-purple-500" >
+                    <Icon icon="fluent:folder-link-28-filled" className="icon" /><span className="icon-heading">Projects</span></Link>
+                </div>
+              </li>
+
+              <li>
+                <div className="border1 ">
+                  <Link href={'/contact'} className=" font-bold hover:text-purple-500" >
+                    <Icon icon="mdi:phone" className="icon" /><span className="icon-heading">Contact</span></Link>
+                </div>
+              </li>
+
+
+              <li>
+                <div className="border1 ">
+                  <Link href={'/certificates'} className=" font-bold hover:text-purple-500" >
+                    <Icon icon="mdi:certificate-outline" className="icon" /><span className="icon-heading">Certificates</span></Link>
+                </div>
+              </li>
+
+              <li>
+                <div className="border1 ">
+                  <Link href={'/Bushra_Resume.pdf'} className=" font-bold hover:text-purple-500" >
+                    <Icon icon="tabler:file-cv" className="icon" /><span className="icon-heading">CV</span></Link>
+                </div>
+              </li>
+
+            </ul>
+
           </div>
+
         </div>
-      </div>
+      </nav>
 
-
-      {/* <div className="pro-card grid justify-center items-center ">
-          <Image alt="testimonial" className="w-50 g1 h-50 pt-5 mb-8 object-cover  object-center  inline-block " src={charity} />
-          <h5>Project Name : Real Estate</h5><a target="_blank" className="flex justify-start items-center" href="https://bootstrap-landing-page-css.netlify.app">
-
-            <h5 className=" mx-2">Live Demo ... </h5></a></div>
-
- */}
 
       <div className="conatainer text-gray-600 mx-auto body-font">
         <div className="container px-5 py-24 mx-auto">
-          
+
           <div className="flex flex-wrap m-4 mx-auto justify-center items-center">
-          
+
             <div className="p-4 lg:w-1/4 md:w-1/2 procards_back">
               <div className="h-full  flex flex-col items-center text-center">
-                <Image alt="testimonial" className="w-50 procards g1 h-50 pt-5 mb-8 object-cover  object-center  inline-block " src={charity} />
+                <Image alt="img" className="w-50 procards g1 h-50 pt-5 mb-8 object-cover  object-center  inline-block " src={charity} />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">Charity Project</h2>
                   <h3 className="text-gray-500 mb-3">UI Developer</h3>
-                  {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
+
                   <span className="inline-flex">
-                    <a href="https://charity-website-weld.vercel.app/" className="ml-2 text-gray-500"  target='_blank'>
+                    <a href="https://charity-website-weld.vercel.app/" className="ml-2 text-gray-500" target='_blank'>
                       <Image alt="testimonial" className="w-6  g1 h-13 pt-5 mb-8 object-cover  object-center  inline-block " src={url} />
                     </a>
                     <a href="https://github.com/Bushrajan/Charity-Website.git" className="ml-2 text-gray-500" target='_blank'>
@@ -77,9 +132,8 @@ export default function Projects() {
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">Tamba Project</h2>
                   <h3 className="text-gray-500 mb-3">UI Developer</h3>
-                  {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
                   <span className="inline-flex">
-                  <a href="https://tamba-ca.vercel.app/" className="ml-2 text-gray-500"  target='_blank'>
+                    <a href="https://tamba-ca.vercel.app/" className="ml-2 text-gray-500" target='_blank'>
                       <Image alt="testimonial" className="w-6  g1 h-13 pt-5 mb-8 object-cover  object-center  inline-block " src={url} />
                     </a>
                     <a href="https://github.com/Bushrajan/Tamba.ca.git" className="ml-2 text-gray-500" target='_blank'>
@@ -101,7 +155,7 @@ export default function Projects() {
                   <h3 className="text-gray-500 mb-3">UI Developer</h3>
                   {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
                   <span className="inline-flex">
-                  <a href="https://postivius-website.vercel.app/" className="ml-2 text-gray-500"  target='_blank'>
+                    <a href="https://postivius-website.vercel.app/" className="ml-2 text-gray-500" target='_blank'>
                       <Image alt="testimonial" className="w-6  g1 h-13 pt-5 mb-8 object-cover  object-center  inline-block " src={url} />
                     </a>
                     <a href="https://github.com/Bushrajan/Postivius-Website.git" className="ml-2 text-gray-500" target='_blank'>
@@ -123,7 +177,7 @@ export default function Projects() {
                   <h3 className="text-gray-500 mb-3">UI Developer</h3>
                   {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
                   <span className="inline-flex">
-                  <a href="veges-store.vercel.app/" className="ml-2 text-gray-500"  target='_blank'>
+                    <a href="veges-store.vercel.app/" className="ml-2 text-gray-500" target='_blank'>
                       <Image alt="testimonial" className="w-6  g1 h-13 pt-5 mb-8 object-cover  object-center  inline-block " src={url} />
                     </a>
                     <a href="https://github.com/Bushrajan/Veges-Store.git" className="ml-2 text-gray-500" target='_blank'>
@@ -136,7 +190,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-           
+
             <div className="p-4 lg:w-1/4 md:w-1/2 procards_back">
               <div className="h-full flex flex-col items-center text-center">
                 <Image alt="testimonial" className="w-50 procards g1 h-50 pt-5 mb-8 object-cover  object-center  inline-block " src={house} />
@@ -145,7 +199,7 @@ export default function Projects() {
                   <h3 className="text-gray-500 mb-3">UI Developer</h3>
                   {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
                   <span className="inline-flex">
-                  <a href="https://real-state-website-ebon.vercel.app/" className="ml-2 text-gray-500"  target='_blank'>
+                    <a href="https://real-state-website-ebon.vercel.app/" className="ml-2 text-gray-500" target='_blank'>
                       <Image alt="testimonial" className="w-6  g1 h-13 pt-5 mb-8 object-cover  object-center  inline-block " src={url} />
                     </a>
                     <a href="https://github.com/Bushrajan/Real-State-Website-.git" className="ml-2 text-gray-500" target='_blank'>
@@ -167,7 +221,7 @@ export default function Projects() {
                   <h3 className="text-gray-500 mb-3">UI Developer</h3>
                   {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
                   <span className="inline-flex">
-                  <a href="https://embed-social-website.vercel.app/" className="ml-2 text-gray-500"  target='_blank'>
+                    <a href="https://embed-social-website.vercel.app/" className="ml-2 text-gray-500" target='_blank'>
                       <Image alt="testimonial" className="w-6  g1 h-13 pt-5 mb-8 object-cover  object-center  inline-block " src={url} />
                     </a>
                     <a href="https://github.com/Bushrajan/EmbedSocial-Website.git" className="ml-2 text-gray-500" target='_blank'>
@@ -189,7 +243,7 @@ export default function Projects() {
                   <h3 className="text-gray-500 mb-3">UI Developer</h3>
                   {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
                   <span className="inline-flex">
-                  <a href="https://hexashop-amber.vercel.app/" className="ml-2 text-gray-500"  target='_blank'>
+                    <a href="https://hexashop-amber.vercel.app/" className="ml-2 text-gray-500" target='_blank'>
                       <Image alt="testimonial" className="w-6  g1 h-13 pt-5 mb-8 object-cover  object-center  inline-block " src={url} />
                     </a>
                     <a href="" className="ml-2 text-gray-500" target='_blank'>
@@ -211,7 +265,7 @@ export default function Projects() {
                   <h3 className="text-gray-500 mb-3">UI Developer</h3>
                   {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
                   <span className="inline-flex">
-                  <a href="https://bushrajan.github.io/FreeBirds/" className="ml-2 text-gray-500"  target='_blank'>
+                    <a href="https://bushrajan.github.io/FreeBirds/" className="ml-2 text-gray-500" target='_blank'>
                       <Image alt="testimonial" className="w-6  g1 h-13 pt-5 mb-8 object-cover  object-center  inline-block " src={url} />
                     </a>
                     <a href="https://github.com/Bushrajan/FreeBirds.git" className="ml-2 text-gray-500" target='_blank'>
@@ -233,7 +287,7 @@ export default function Projects() {
                   <h3 className="text-gray-500 mb-3">UI Developer</h3>
                   {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
                   <span className="inline-flex">
-                  <a href="https://paradise-hotel-kappa.vercel.app/" className="ml-2 text-gray-500"  target='_blank'>
+                    <a href="https://paradise-hotel-kappa.vercel.app/" className="ml-2 text-gray-500" target='_blank'>
                       <Image alt="testimonial" className="w-6  g1 h-13 pt-5 mb-8 object-cover  object-center  inline-block " src={url} />
                     </a>
                     <a href="https://github.com/Bushrajan/Paradise-Hotel.git" className="ml-2 text-gray-500" target='_blank'>
@@ -255,7 +309,7 @@ export default function Projects() {
                   <h3 className="text-gray-500 mb-3">UI Developer</h3>
                   {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
                   <span className="inline-flex">
-                  <a href="https://bushrajan.github.io/Sea-World-Website-/" className="ml-2 text-gray-500"  target='_blank'>
+                    <a href="https://bushrajan.github.io/Sea-World-Website-/" className="ml-2 text-gray-500" target='_blank'>
                       <Image alt="testimonial" className="w-6  g1 h-13 pt-5 mb-8 object-cover  object-center  inline-block " src={url} />
                     </a>
                     <a href="https://github.com/Bushrajan/Sea-World-Website-.git" className="ml-2 text-gray-500" target='_blank'>
@@ -277,7 +331,7 @@ export default function Projects() {
                   <h3 className="text-gray-500 mb-3">UI Developer</h3>
                   {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
                   <span className="inline-flex">
-                  <a href="https://github.com/Bushrajan/Pet-Shop.git" className="ml-2 text-gray-500"  target='_blank'>
+                    <a href="https://github.com/Bushrajan/Pet-Shop.git" className="ml-2 text-gray-500" target='_blank'>
                       <Image alt="testimonial" className="w-6  g1 h-13 pt-5 mb-8 object-cover  object-center  inline-block " src={url} />
                     </a>
                     <a href="https://pet-shop-ashy-tau.vercel.app/" className="ml-2 text-gray-500" target='_blank'>
@@ -299,7 +353,7 @@ export default function Projects() {
                   <h3 className="text-gray-500 mb-3">UI Developer</h3>
                   {/* <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p> */}
                   <span className="inline-flex">
-                  <a href="https://vercel.live/link/electrica-beta.vercel.app?via=project-dashboard-alias-list&p=1" className="ml-2 text-gray-500"  target='_blank'>
+                    <a href="https://vercel.live/link/electrica-beta.vercel.app?via=project-dashboard-alias-list&p=1" className="ml-2 text-gray-500" target='_blank'>
                       <Image alt="testimonial" className="w-6  g1 h-13 pt-5 mb-8 object-cover  object-center  inline-block " src={url} />
                     </a>
                     <a href="https://github.com/Bushrajan/Electrica-website.git" className="ml-2 text-gray-500" target='_blank'>

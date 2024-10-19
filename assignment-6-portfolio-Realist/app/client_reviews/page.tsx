@@ -1,11 +1,12 @@
 "use client"; // <===== REQUIRED
 
 import React from "react";
+import Link from "next/link";
+import { Icon } from '@iconify/react';
 import Image from "next/image";
 import cb1 from "@/app/cb1.png"
 import cb2 from "@/app/cb2.png"
 import cg1 from "@/app/cg1.png"
-
 // Swiper components, modules and styles
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,17 +19,6 @@ import "swiper/css/navigation";
 export default function Client_reviews() {
     return (
         <>
-            <div className="container px-5 py-24 mx-auto">
-                <div className="flex flex-col">
-                    <div className="h-1 bg-gray-200 rounded overflow-hidden">
-                        <div className="w-24 h-full bg-indigo-500"></div>
-                    </div>
-                    <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-                        <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">CLIENT REVIEWS</h1>
-                        <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0"><strong><i>"As a freelance web designer, I always aim to deliver the best to my clients."</i></strong></p>
-                    </div>
-                </div>
-            </div>
 
             <Swiper
                 navigation
@@ -43,7 +33,7 @@ export default function Client_reviews() {
                         </div>
 
                         <div className=" p-5 backdrop-blur-lg  ">
-                            <h2 className="text-xl  title-font text-blue-400 font-bold mt-5" style={{ fontStyle: "oblique", textShadow: "1px -2px 2px white" }}>BETTER FUTURE for PAKISTAN (BFFP) WEBSITE</h2>
+                            <h2 className="text-xl  title-font text-violet-800 font-bold mt-5" style={{ fontStyle: "oblique", textShadow: "1px -2px 2px white" }}>BETTER FUTURE for PAKISTAN (BFFP) WEBSITE</h2>
                             <br />
                             <div className="relative z-10 space-y-4 ">
                                 <div className="flex items-center text-brand-secondary">
@@ -72,7 +62,7 @@ export default function Client_reviews() {
                         </div>
 
                         <div className=" p-5 backdrop-blur-lg ">
-                            <h2 className="text-xl  title-font text-blue-400 font-bold mt-5" style={{ fontStyle: "oblique", textShadow: "1px -2px 2px white" }}>CHARITY WEBSITE</h2>
+                            <h2 className="text-xl  title-font text-violet-800 font-bold mt-5" style={{ fontStyle: "oblique", textShadow: "1px -2px 2px white" }}>CHARITY WEBSITE</h2>
                             <br />
                             <div className="relative z-10 space-y-4 ">
                                 <div className="flex items-center text-brand-secondary">
@@ -99,9 +89,9 @@ export default function Client_reviews() {
                         <div className="rounded-lg h-64 overflow-hidden">
                             <Image alt="testimonial" className="w-50  g1 h-50 pt-5 mb-8 object-cover justify-center items-center object-center  inline-block " src={cb2} />
                         </div>
-<br />
+                        <br />
                         <div className=" p-5 backdrop-blur-lg ">
-                            <h2 className="text-xl  title-font text-blue-400 font-bold mt-5" style={{ fontStyle: "oblique", textShadow: "1px -2px 2px white" }}>ACSHR WEBSITE</h2>
+                            <h2 className="text-xl  title-font text-violet-800 font-bold mt-5" style={{ fontStyle: "oblique", textShadow: "1px -2px 2px white" }}>ACSHR WEBSITE</h2>
                             <br />
                             <div className="relative z-10 space-y-4 ">
                                 <div className="flex items-center text-brand-secondary">
