@@ -24,7 +24,7 @@ export default function Client_reviews() {
                 loop={true}
                 modules={[Autoplay, Navigation]}>
                 <SwiperSlide >
-                    <div className="p-2 md:w-1/3 sm:mb-0 mb-6 clientcard client">
+                    <div className="p-2     ">
                         <div className="rounded-lg h-64 overflow-hidden">
                             <Image alt="testimonial" className="w-50  g1 h-50 pt-5 mb-8 object-cover justify-center items-center object-center  inline-block " src={cb1} />
                         </div>
