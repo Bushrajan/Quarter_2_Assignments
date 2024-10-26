@@ -1,6 +1,4 @@
 'use client'
-
-import React, { use } from 'react';
 import Image from 'next/image';
 import coma from "@/app/asset/coma.png"
 import coma2 from "@/app/asset/coma2.png"
