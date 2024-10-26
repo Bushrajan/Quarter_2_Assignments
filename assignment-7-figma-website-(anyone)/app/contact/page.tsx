@@ -8,7 +8,7 @@ import TypedComponent2 from '../components/types2';
 function Contact() {
   return (
     <div className='md:mt-40 mt-10 mb-20'>
-      <h1 className="text-white text-2xl text-center title-font font-medium mb-4" style={{ textTransform: "capitalize" }}>What's  <span className='text-yellow-300'>Stopping </span>you?</h1>
+      <h1 className="text-white text-2xl text-center title-font font-medium mb-4" style={{ textTransform: "capitalize" }}>What is  <span className='text-yellow-300'>Stopping </span>you?</h1>
 
       <div className='flex mx-auto md:gap-10 gap-6 items-center p-1 w-full justify-center lg:flex-row md:flex-row  sm:flex-row flex-wrap  '>
 

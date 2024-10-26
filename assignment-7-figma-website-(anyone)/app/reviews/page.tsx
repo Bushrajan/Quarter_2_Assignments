@@ -33,7 +33,7 @@ function Review() {
                 <div className='ms-5 p-5'>
                   <Image src={coma} alt="heroimg" className='button ' width={30} height={50}></Image>
 
-                  <p className='mt-10'>A complete package to all the fitness freaks out there. Join soon and test yourself. Vyayamshala's layouts, environment and it's surrounding itself plays vital role to motivate and go beyond your limitation.</p>
+                  <p className='mt-10'>A complete package to all the fitness freaks out there. Join soon and test yourself. Vyayamshalas layouts, environment and it is surrounding itself plays vital role to motivate and go beyond your limitation.</p>
 
                   <div className='flex justify-between'>
                     <div>
@@ -59,7 +59,7 @@ function Review() {
                 <div className='ms-5 p-5'>
                   <Image src={coma} alt="heroimg" className='button ' width={30} height={50}></Image>
 
-                  <p className='mt-10'>A complete package to all the fitness freaks out there. Join soon and test yourself. Vyayamshala's layouts, environment and it's surrounding itself plays vital role to motivate and go beyond your limitation.</p>
+                  <p className='mt-10'>A complete package to all the fitness freaks out there. Join soon and test yourself. Vyayamshala is layouts, environment and it is surrounding itself plays vital role to motivate and go beyond your limitation.</p>
 
                   <div className='flex justify-between'>
                     <div>
